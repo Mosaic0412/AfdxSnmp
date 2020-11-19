@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{45AFA486-D2E0-4D40-9FE0-AB68F8A95E77}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AfdxSnmp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\include\wpdpack;C:\Program Files\AIM GmbH\Arinc 664 Windows BSP 19.2.1\include;C:\Program Files\AIM GmbH\Arinc 664 Windows BSP 19.2.1\include\hw;..\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_AIM_WINDOWS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib;C:\Program Files\AIM GmbH\Arinc 664 Windows BSP 19.2.1\lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;aim_fdx.19.lib;wpcap.lib;netsnmp.lib;regex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\afdx\afdx_api.h" />
+    <ClInclude Include="..\include\afdx\afdx_GenericTX.h" />
+    <ClInclude Include="..\include\afdx\afdx_LogInOut.h" />
+    <ClInclude Include="..\include\afdx\afdx_SampleUtils.h" />
+    <ClInclude Include="..\include\afdx\afdx_types.h" />
+    <ClInclude Include="..\include\library\asn1.h" />
+    <ClInclude Include="..\include\library\callback.h" />
+    <ClInclude Include="..\include\library\check_varbind.h" />
+    <ClInclude Include="..\include\library\container.h" />
+    <ClInclude Include="..\include\library\container_binary_array.h" />
+    <ClInclude Include="..\include\library\container_iterator.h" />
+    <ClInclude Include="..\include\library\container_list_ssll.h" />
+    <ClInclude Include="..\include\library\data_list.h" />
+    <ClInclude Include="..\include\library\default_store.h" />
+    <ClInclude Include="..\include\library\factory.h" />
+    <ClInclude Include="..\include\library\fd_event_manager.h" />
+    <ClInclude Include="..\include\library\getopt.h" />
+    <ClInclude Include="..\include\library\int64.h" />
+    <ClInclude Include="..\include\library\keytools.h" />
+    <ClInclude Include="..\include\library\large_fd_set.h" />
+    <ClInclude Include="..\include\library\lcd_time.h" />
+    <ClInclude Include="..\include\library\md5.h" />
+    <ClInclude Include="..\include\library\mib.h" />
+    <ClInclude Include="..\include\library\mt_support.h" />
+    <ClInclude Include="..\include\library\oid.h" />
+    <ClInclude Include="..\include\library\oid_stash.h" />
+    <ClInclude Include="..\include\library\parse.h" />
+    <ClInclude Include="..\include\library\read_config.h" />
+    <ClInclude Include="..\include\library\scapi.h" />
+    <ClInclude Include="..\include\library\snmp-tc.h" />
+    <ClInclude Include="..\include\library\snmp.h" />
+    <ClInclude Include="..\include\library\snmpCallbackDomain.h" />
+    <ClInclude Include="..\include\library\snmpIPv4BaseDomain.h" />
+    <ClInclude Include="..\include\library\snmpSocketBaseDomain.h" />
+    <ClInclude Include="..\include\library\snmpUDPBaseDomain.h" />
+    <ClInclude Include="..\include\library\snmpUDPDomain.h" />
+    <ClInclude Include="..\include\library\snmpUDPIPv4BaseDomain.h" />
+    <ClInclude Include="..\include\library\snmp_alarm.h" />
+    <ClInclude Include="..\include\library\snmp_api.h" />
+    <ClInclude Include="..\include\library\snmp_assert.h" />
+    <ClInclude Include="..\include\library\snmp_client.h" />
+    <ClInclude Include="..\include\library\snmp_debug.h" />
+    <ClInclude Include="..\include\library\snmp_enum.h" />
+    <ClInclude Include="..\include\library\snmp_impl.h" />
+    <ClInclude Include="..\include\library\snmp_logging.h" />
+    <ClInclude Include="..\include\library\snmp_parse_args.h" />
+    <ClInclude Include="..\include\library\snmp_secmod.h" />
+    <ClInclude Include="..\include\library\snmp_service.h" />
+    <ClInclude Include="..\include\library\snmp_transport.h" />
+    <ClInclude Include="..\include\library\system.h" />
+    <ClInclude Include="..\include\library\tools.h" />
+    <ClInclude Include="..\include\library\transform_oids.h" />
+    <ClInclude Include="..\include\library\types.h" />
+    <ClInclude Include="..\include\library\ucd_compat.h" />
+    <ClInclude Include="..\include\library\vacm.h" />
+    <ClInclude Include="..\include\library\winpipe.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AfdxSnmp.c" />
+    <ClCompile Include="afdx\Afdx_AnalyzingSnmp.c" />
+    <ClCompile Include="afdx\afdx_GenericTX.c" />
+    <ClCompile Include="afdx\afdx_GenTX_Ext.c" />
+    <ClCompile Include="afdx\afdx_GetDMac.c" />
+    <ClCompile Include="afdx\afdx_GetMacIP.c" />
+    <ClCompile Include="afdx\afdx_LogInOut.c" />
+    <ClCompile Include="afdx\afdx_SampleUtils.c" />
+    <ClCompile Include="afdx\afdx_VL_Mac.c" />
+    <ClCompile Include="snmp\asn1.c" />
+    <ClCompile Include="snmp\callback.c" />
+    <ClCompile Include="snmp\check_varbind.c" />
+    <ClCompile Include="snmp\closedir.c" />
+    <ClCompile Include="snmp\container.c" />
+    <ClCompile Include="snmp\container_binary_array.c" />
+    <ClCompile Include="snmp\container_iterator.c" />
+    <ClCompile Include="snmp\container_list_ssll.c" />
+    <ClCompile Include="snmp\data_list.c" />
+    <ClCompile Include="snmp\default_store.c" />
+    <ClCompile Include="snmp\fd_event_manager.c" />
+    <ClCompile Include="snmp\getopt.c" />
+    <ClCompile Include="snmp\gettimeofday.c" />
+    <ClCompile Include="snmp\inet_ntop.c" />
+    <ClCompile Include="snmp\inet_pton.c" />
+    <ClCompile Include="snmp\int64.c" />
+    <ClCompile Include="snmp\keytools.c" />
+    <ClCompile Include="snmp\large_fd_set.c" />
+    <ClCompile Include="snmp\lcd_time.c" />
+    <ClCompile Include="snmp\md5.c" />
+    <ClCompile Include="snmp\mib.c" />
+    <ClCompile Include="snmp\mt_support.c" />
+    <ClCompile Include="snmp\oid_stash.c" />
+    <ClCompile Include="snmp\opendir.c" />
+    <ClCompile Include="snmp\parse.c" />
+    <ClCompile Include="snmp\readdir.c" />
+    <ClCompile Include="snmp\read_config.c" />
+    <ClCompile Include="snmp\scapi.c" />
+    <ClCompile Include="snmp\snmp-tc.c" />
+    <ClCompile Include="snmp\snmp.c" />
+    <ClCompile Include="snmp\snmp_alarm.c" />
+    <ClCompile Include="snmp\snmp_api.c" />
+    <ClCompile Include="snmp\snmp_auth.c" />
+    <ClCompile Include="snmp\snmp_client.c" />
+    <ClCompile Include="snmp\snmp_debug.c" />
+    <ClCompile Include="snmp\snmp_enum.c" />
+    <ClCompile Include="snmp\snmp_logging.c" />
+    <ClCompile Include="snmp\snmp_parse_args.c" />
+    <ClCompile Include="snmp\snmp_secmod.c" />
+    <ClCompile Include="snmp\snmp_service.c" />
+    <ClCompile Include="snmp\snmp_transport.c" />
+    <ClCompile Include="snmp\strlcat.c" />
+    <ClCompile Include="snmp\strlcpy.c" />
+    <ClCompile Include="snmp\strtok_r.c" />
+    <ClCompile Include="snmp\system.c" />
+    <ClCompile Include="snmp\tools.c" />
+    <ClCompile Include="snmp\ucd_compat.c" />
+    <ClCompile Include="snmp\vacm.c" />
+    <ClCompile Include="snmp\winpipe.c" />
+    <ClCompile Include="transports\snmpCallbackDomain.c" />
+    <ClCompile Include="transports\snmpIPv4BaseDomain.c" />
+    <ClCompile Include="transports\snmpSocketBaseDomain.c" />
+    <ClCompile Include="transports\snmpUDPBaseDomain.c" />
+    <ClCompile Include="transports\snmpUDPDomain.c" />
+    <ClCompile Include="transports\snmpUDPIPv4BaseDomain.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

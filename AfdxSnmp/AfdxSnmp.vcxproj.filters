@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\afdx\afdx_GenericTX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\afdx\afdx_LogInOut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\afdx\afdx_SampleUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\asn1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\callback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\check_varbind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\container_binary_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\container_iterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\container_list_ssll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\data_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\default_store.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\fd_event_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\int64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\keytools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\large_fd_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\lcd_time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\mib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\mt_support.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\oid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\oid_stash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\parse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\read_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\scapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_alarm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_enum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_parse_args.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_secmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp_transport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmpCallbackDomain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmpIPv4BaseDomain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmpSocketBaseDomain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmp-tc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmpUDPBaseDomain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmpUDPDomain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\snmpUDPIPv4BaseDomain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\transform_oids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\ucd_compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\vacm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\library\winpipe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\afdx\afdx_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\afdx\afdx_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="afdx\afdx_GenericTX.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="afdx\afdx_GenTX_Ext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="afdx\afdx_GetDMac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="afdx\afdx_GetMacIP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="afdx\afdx_LogInOut.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="afdx\afdx_SampleUtils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="afdx\afdx_VL_Mac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\winpipe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\vacm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\ucd_compat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\tools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\system.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\strtok_r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\strlcpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\strlcat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp-tc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_transport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_service.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_secmod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_parse_args.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_logging.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_enum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_auth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp_alarm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\snmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\scapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\readdir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\read_config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\opendir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\oid_stash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\mt_support.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\mib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\md5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\lcd_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\large_fd_set.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\keytools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\int64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\inet_pton.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\inet_ntop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\gettimeofday.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\fd_event_manager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\default_store.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\data_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\container_list_ssll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\container_iterator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\container_binary_array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\container.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\closedir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\check_varbind.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\callback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snmp\asn1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transports\snmpCallbackDomain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transports\snmpIPv4BaseDomain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transports\snmpSocketBaseDomain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transports\snmpUDPBaseDomain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transports\snmpUDPDomain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transports\snmpUDPIPv4BaseDomain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AfdxSnmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="afdx\Afdx_AnalyzingSnmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
