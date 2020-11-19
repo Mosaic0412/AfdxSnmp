@@ -63,6 +63,7 @@ main(int argc, char *argv[])
 
 	//analyzingSnmp();
 
+	//verify mac and convert to VL
 	//l_Mac_to_VL();
 
 	address = (netsnmp_address_list *)calloc(1, sizeof(netsnmp_address_list));
