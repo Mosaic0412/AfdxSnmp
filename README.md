@@ -11,7 +11,7 @@ If you're never used arinc664 board before,or you're trying to figure out how to
 - [Overview](#Overview)
 - [Table of Contents](#Table of Contents)
 - [Getting Started](#Getting Started)
-  - [Quick Start : Windows](##Quick Start : Windows)
+  - [Quick Start : Windows](###Quick Start : Windows)
     - [Prerequisites](####Prerequisites)
     - [Install the board driver](####Install the board driver)
     - [Build your own application](####Build your own application)
