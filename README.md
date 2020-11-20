@@ -9,8 +9,8 @@ If you're never used arinc664 board before,or you're trying to figure out how to
 # Table of Contents
 
 - [Overview](#Overview)
-- [Table of Contents](#Table of Contents)
-- [Getting Started](#Getting Started)
+- [Table of Contents](#TableofContents)
+- [Getting Started](#GettingStarted)
   - Quick Start : Windows
     - Prerequisites
     - Install the board driver
